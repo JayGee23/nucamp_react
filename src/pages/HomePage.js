@@ -1,9 +1,11 @@
-import { Container } from "reactstrap"
-import DisplayList from "../features/display/DisplayList"
+import { Container } from "reactstrap";
+import DisplayList from "../features/display/DisplayList";
+import SubHeader from "../components/SubHeader";
 
 function HomePage() {
   return (
     <Container>
+      <SubHeader current='Home' />
       <DisplayList />
     </Container>
   )
