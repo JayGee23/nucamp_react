@@ -6,6 +6,7 @@ import {Header, Footer} from './components/index'
 import { ContactPage, HomePage, CampsitesDirectoryPage, CampsiteDetailPage, AboutPage} from './pages/index';
 import { fetchCampsites } from './features/campsites/campsitesSlice';
 import { fetchPartners } from './features/partners/partnersSlice';
+import { fetchPromotions } from './features/promotions/promotionsSlice';
 
 //import ContactPage from './pages/ContactPage';
 //import HomePage from './pages/HomePage';
@@ -21,6 +22,7 @@ function App() {
   useEffect(() => {
     dispatch(fetchCampsites());
     dispatch(fetchPartners());
+    dispatch(fetchPromotions())
   }, [dispatch])
 
 
